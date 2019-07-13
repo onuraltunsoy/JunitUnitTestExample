@@ -8,16 +8,15 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import com.altunsoy.UnitTesteExample.HesapMakinesi;
+import com.altunsoy.UnitTesteExample.Calculator;
 
 
 @RunWith(Parameterized.class)
 public class ParameterTest {
 	///JunitParams Framework
-	private int en;
-	private int boy;
+	private int width, height;
 	private int toplamMetreKare;
-	private HesapMakinesi hesapMakinesi;
+	private Calculator hesapMakinesi;
 
 	@Parameterized.Parameters
 	public static Collection<Object[]> data(){
@@ -27,15 +26,15 @@ public class ParameterTest {
 			{3,90,270}
 		});
 	}
-	public ParameterTest(int en, int boy, int toplamMetreKare) {
-		this.en = en;
-		this.boy = boy;
+	public ParameterTest(int width,int height, int toplamMetreKare) {
+		this.width = width;
+		this.height = height;
 		this.toplamMetreKare = toplamMetreKare;
-		 hesapMakinesi = new HesapMakinesi();
+		 hesapMakinesi = new Calculator();
 	}
 	
 	@Test
 	public void testMetrekareHesapla() throws Exception {
-		assertEquals(toplamMetreKare,hesapMakinesi.metrekareHesapla(en,boy));
+		assertEquals(toplamMetreKare,hesapMakinesi.calculateCentare(width, height));
 	}
 }

@@ -9,7 +9,7 @@ public class IgnoreTest {
 		System.out.println("Hello");
 	}
 	@Test
-	@Ignore("Bu metod daha sonra kullanılacak")
+	@Ignore("Ignored method")
 	public void sayHello2() {
 		System.out.println("Hello 2");
 	}

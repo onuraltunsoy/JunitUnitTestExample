@@ -56,6 +56,7 @@ public class CustomerServiceTest {
 	}
 	@Test
 	public void testCustomerDelete() {
+		
 		musteriService.saveCustomer(new Customer(1234));
 
 		musteriService.deletecustomer(1234);

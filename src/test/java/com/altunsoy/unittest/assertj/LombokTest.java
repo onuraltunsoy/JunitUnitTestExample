@@ -11,7 +11,7 @@ public class LombokTest {
 	public void testlombok() throws Exception{
 		Gift gift = new Gift("onur");
 		System.out.println( gift.toString()); 
-		gift = Gift.builder().name("ahmet").build();
+		gift = Gift.builder().name("altunsoy").build();
 		System.out.println( gift.toString()); 
 
 	}

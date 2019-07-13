@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.altunsoy.UnitTesteExample.HesapMakinesi;
+import com.altunsoy.UnitTesteExample.Calculator;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
@@ -13,7 +13,7 @@ import junitparams.Parameters;
 @RunWith(JUnitParamsRunner.class)
 public class AssertJunitParamsTest {
 	
-	private HesapMakinesi  hesapMakinesi = new HesapMakinesi();
+	private Calculator  hesapMakinesi = new Calculator();
 	
 	@Test
 	@Parameters("10,2,20")
